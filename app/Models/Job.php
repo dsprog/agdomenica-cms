@@ -5,18 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class OnlineStore extends Model
+class Job extends Model
 {
     use HasFactory;
 
-    public $timestamps = false;
-
     protected $fillable = [
-        'name',
-        'url',
-        'logo',
-        'order'
+        'category',
+        'client_id',
+        'title',
+        'resume',
+        'slug',
+        'content',
+        'image',
+        'status'
     ];
-
-
 }
