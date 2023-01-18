@@ -1,7 +1,7 @@
 <x-admin-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <img src="{{asset("site/cegea.png")}}" alt="cegea" class="block h-20 w-auto">
+            <img src="{{asset("site/domenica.png")}}" alt="Agência Domenica" class="block h-10 w-auto">
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">

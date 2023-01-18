@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <img src="{{asset("site/cegea.png")}}" alt="cegea" class="block h-20 w-auto">
+            <img src="{{asset("site/domenica.png")}}" alt="Agência Domenica" class="block h-10 w-auto">
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -44,13 +44,5 @@
                 </x-jet-button>
             </div>
         </form>
-        <div class="m-3 p-3 text-center">
-            <hr>
-            <div class="mt-3 p-3">
-                <a class="block px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4" href="{{ route('register') }}">
-                    {{ __('Cadastro de aluno') }}
-                </a>
-            </div>
-        </div>
     </x-jet-authentication-card>
 </x-guest-layout>

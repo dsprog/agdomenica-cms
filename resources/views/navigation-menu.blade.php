@@ -5,11 +5,10 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <img src="{{asset("site/cegea.png")}}" alt="cegea" class="block h-16 w-auto">
+                    <img src="{{asset("site/domenica.png")}}" alt="Agência Domenica" class="block h-8 w-auto">
                 </div>
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    @can('manage-admin')
                     <x-jet-nav-link href="{{ route('admin.about.index') }}"
                         :active="request()->routeIs('admin.about.index')">
                         {{ __('Sobre') }}
@@ -18,21 +17,11 @@
                         :active="request()->routeIs('admin.banners.*')">
                         {{ __('Banners') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.courses.index') }}"
-                        :active="request()->routeIs('admin.courses.*')">
-                        {{ __('Cursos') }}
+                    <x-jet-nav-link href="#">
+                        {{ __('Clientes') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.ead.index') }}"
-                        :active="request()->routeIs(['admin.ead.*', 'admin.lessons.*'])">
-                        {{ __('Ead') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.teacher.index') }}"
-                        :active="request()->routeIs('admin.teacher.*')">
-                        {{ __('Professores') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.students.index') }}"
-                        :active="request()->routeIs('admin.students.*')">
-                        {{ __('Alunos') }}
+                    <x-jet-nav-link href="#">
+                        {{ __('Portfólio') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('admin.contacts.index') }}"
                         :active="request()->routeIs('admin.contacts.*')">
@@ -46,27 +35,6 @@
                         :active="request()->routeIs('admin.config.index')">
                         {{ __('Configurações') }}
                     </x-jet-nav-link>
-                    @endif
-                    @can('manage-teacher')
-                        <x-jet-nav-link href="{{ route('dashboard') }}"
-                            :active="request()->routeIs('dashboard')">
-                            {{ __('Dashboard') }}
-                        </x-jet-nav-link>
-                    @endif
-                    @can('manage-student')
-                        <x-jet-nav-link href="{{ route('studient.index') }}"
-                            :active="request()->routeIs('studient.index')">
-                            {{ __('Início') }}
-                        </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('studient.courses.index') }}"
-                            :active="request()->routeIs('studient.courses.index')">
-                            Meus Cursos
-                        </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('studient.courses.allcourses') }}"
-                            :active="request()->routeIs('studient.courses.allcourses')">
-                            Todos os cursos
-                        </x-jet-nav-link>
-                    @endif
                 </div>
             </div>
 
