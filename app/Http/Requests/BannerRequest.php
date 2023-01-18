@@ -25,7 +25,7 @@ class BannerRequest extends FormRequest
     {
         $rules = [
             'title' => 'required',
-            'image' => 'required|image|dimensions:width=1100,height=350',
+            'image' => 'required|image|dimensions:width=1900,height=850',
             'image_mobile' => 'required|image|dimensions:width=700,height=350',
             'expiration_date' => 'nullable|date',
             'published_at' => 'required|date',
@@ -33,7 +33,7 @@ class BannerRequest extends FormRequest
         ];
         if ($this->method() == 'PUT') {
             return [
-                'image' => 'nullable|image|dimensions:width=1100,height=350',
+                'image' => 'nullable|image|dimensions:width=1900,height=850',
                 'image_mobile' => 'nullable|image|dimensions:width=700,height=350',
             ];
         }

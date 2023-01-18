@@ -23,7 +23,7 @@
                                 <x-jet-input-error for="url" />
                             </div>
                             <div class="mb-5">
-                                <label class="block">Imagem (medida 1100x350)</label>
+                                <label class="block">Imagem (medida 1900x850)</label>
                                 <x-jet-input name="image" type="file" />
                                 <x-jet-input-error for="image" />
                             </div>

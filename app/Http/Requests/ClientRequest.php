@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class TeacherRequest extends FormRequest
+class ClientRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,30 +24,23 @@ class TeacherRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|string|min:6',
+            'title' => 'required',
+            'image' => 'required|image|dimensions:width=300,height=300'
         ];
-
         if ($this->method() == 'PUT') {
-            $rules['email'] = [
-                'required',
-                'string',
-                'email',
-                'max:255',
-                Rule::unique('users')->ignore($this->professore)
+            return [
+                'image' => 'nullable|image|dimensions:width=300,height=300'
             ];
-            unset($rules['password']);
         }
+
         return $rules;
     }
 
     public function attributes()
     {
         return [
-            'name' => 'nome',
-            'email' => 'email',
-            'password' => 'senha',
+            'title' => 'cliente',
+            'image' => 'imagem'
         ];
     }
 }

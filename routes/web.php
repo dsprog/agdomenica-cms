@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\ConfigController;
 use App\Http\Controllers\Admin\ContactController;
 
@@ -25,6 +26,7 @@ Route::group(['middleware' => 'auth'], function() {
     ], function() {
 
         Route::resource('banners', BannerController::class);
+        Route::resource('clientes', ClientController::class, ['names' => 'clients']);
         Route::resource('usuarios', UserController::class, ['names' => 'users']);
 
         Route::prefix('/')->group(function(){

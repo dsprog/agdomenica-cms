@@ -17,7 +17,8 @@
                         :active="request()->routeIs('admin.banners.*')">
                         {{ __('Banners') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="#">
+                    <x-jet-nav-link href="{{ route('admin.clients.index') }}"
+                    :active="request()->routeIs('admin.clients.*')">
                         {{ __('Clientes') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="#">
