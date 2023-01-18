@@ -1,18 +1,9 @@
 <header>
-    <div id="suptop">
-        <div class="container mx-auto overflow-hidden">
-            <a href="{{ route('studient.index') }}" class="inline-block xl:float-right">
-            <img src="{{ asset('site/portal-aluno.png') }}" alt="Portal do Aluno" width="265" height="38"></a>
-
-            <a href="{{ config('configs.facebook') }}" target="_blank" class="inline-block xl:hidden"><img src="{{ asset("site/facebook.png")}}" alt="Facebook" width="38" height="38"></a>
-            <a href="{{ config('configs.instagram') }}" target="_blank" class="inline-block xl:hidden"><img src="{{ asset("site/instagram.png")}}" alt="Instagram" width="38" height="38"></a>
-            <a href="{{ config('configs.linkedin') }}" target="_blank" class="inline-block xl:hidden"><img src="{{ asset("site/linkdin.png")}}" alt="Linkdin" width="38" height="38"></a>
-        </div>
-    </div>
     <div class="container mx-auto">
         <div class="grid grid-cols-3 md:grid-cols-7 items-center p-4">
             <div class="col-span-2 md:col-span-1">
-                <a href="{{ route('site.index') }}"><img src="{{ asset('site/cegea.png') }}" alt="Cegea" class="logo" width="150" height="108"></a>
+                <a href="{{ route('site.index') }}"><img src="{{ asset('site/domenica.png') }}"
+                    alt="Agência Domenica" class="logo" width="150" height="108"></a>
             </div>
             <div class="col-span-1 md:col-span-5 menutop">
                 <nav x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
@@ -39,9 +30,6 @@
                     >
                         <ul>
                             <li {{ request()->routeIs('site.index')? 'class=active': '' }}><a href="{{ route('site.index') }}" @click="isOpen = false">Home</a></li>
-                            <li {{ request()->routeIs('site.sobre')? 'class=active': '' }}><a href="{{ route('site.sobre') }}" @click="isOpen = false">Sobre</a></li>
-                            <li {{ request()->routeIs('site.posgraduacao')? 'class=active': '' }}><a href="{{ route('site.posgraduacao') }}" @click="isOpen = false">Pós-Graduação</a></li>
-                            <li {{ request()->routeIs(['site.cursos','site.curso'])? 'class=active': '' }}><a href="{{ route('site.cursos') }}" @click="isOpen = false">Treinamentos</a></li>
                             <li {{ request()->routeIs('site.contato')? 'class=active': '' }}><a href="{{ route('site.contato') }}" @click="isOpen = false">Contato</a></li>
                         </ul>
                     </div>

@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Site;
 
 use App\Models\About;
+use App\Models\Banner;
 use App\Models\Contact;
 use App\Mail\ContactSend;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
-use App\Models\Banner;
 
 class SiteController extends Controller
 {
@@ -25,13 +25,7 @@ class SiteController extends Controller
              ->whereRaw('(expiration_date is NULL OR expiration_date >= CURDATE())')
              ->where('active', 1)->get();
         $about = About::first();
-        $pos = DB::table('courses')->select('resume','image')->find(1);
-        $cursos =  DB::table('courses')
-            ->where('active','=','1')
-            ->where('id','<>','1')
-            ->orderBy('published_at', 'asc')
-            ->paginate(8);
-        return view('site.home', compact('banners', 'about', 'cursos', 'pos'));
+        return view('site.home', compact('banners', 'about'));
     }
 
     public function sobre()

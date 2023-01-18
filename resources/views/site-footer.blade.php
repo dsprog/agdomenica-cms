@@ -18,14 +18,10 @@
                 </div>
             </div>
             <div class="col-span-1 hidden md:block md:pb-0">
-                <a href="{{ route('site.cursos') }}" class="text-white text-sm">:: Treinamentos</a><br>
                 <a href="{{ route('site.contato') }}" class="text-white text-sm">:: Contato</a><br>
-                <a href="{{ route('studient.index') }}" class="text-white text-sm">:: Portal do aluno</a>
             </div>
             <div class="col-span-1 hidden md:block md:pb-0">
                 <a href="{{ route('site.index') }}" class="text-white text-sm">:: Home</a><br>
-                <a href="{{ route('site.sobre') }}" class="text-white text-sm">:: Sobre</a><br>
-                <a href="{{ route('site.posgraduacao') }}" class="text-white text-sm">:: Pós-Graduação</a>
             </div>
             <div class="col-span-3 pb-4 md:pb-0">
                 <p class="text-center lg:text-right"><img src="{{ asset("site/apoio.png")}}"
