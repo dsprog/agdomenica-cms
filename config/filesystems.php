@@ -32,7 +32,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => public_path('uploads'),
+            'root' => env('APP_UPLOAD', public_path('uploads'))
         ],
 
         'public' => [
