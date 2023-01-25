@@ -47,7 +47,7 @@
                                     </td>
                                     <td class="px-6 py-2 whitespace-nowrap text-right text-sm font-medium">
                                         <div class="flex">
-                                            <a href="{{ route('admin.users.edit', $user) }}" class="mr-2" title="editar usuario">
+                                            <a href="{{ route('admin.users.edit', $user) }}" class="mr-2 p-1" title="editar usuario">
                                                 <x-icons type="edit" />
                                             </a>
                                             <a href="#" title="excluir usuario">

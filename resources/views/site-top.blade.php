@@ -29,14 +29,18 @@
                         x-show.transition="true"
                     >
                         <ul>
-                            <li {{ request()->routeIs('site.index')? 'class=active': '' }}><a href="{{ route('site.index') }}" @click="isOpen = false">Home</a></li>
-                            <li {{ request()->routeIs('site.contato')? 'class=active': '' }}><a href="{{ route('site.contato') }}" @click="isOpen = false">Contato</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Home</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Quem Somos</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Jobs</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Social Media</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Mkt Imobiliário</a></li>
+                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Serviços</a></li>
+                            <li><a href="{{ route('site.contato') }}" @click="isOpen = false">Contato</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <div class="col-span-1 hidden xl:block socialtop">
-                <div class="siganos">Siga-nos</div>
                 <div class="redes">
                     <a href="{{ config('configs.facebook') }}" target="_blank"><img src="{{ asset("site/facebook.png")}}" alt="Facebook" width="40" height="40"></a>
                     <a href="{{ config('configs.instagram') }}" target="_blank"><img src="{{ asset("site/instagram.png")}}" alt="Instagram" width="40" height="40"></a>

@@ -1,7 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import "embla.css";
 body{ padding: 0; margin: 0; background: #fff; }
 p{ font-size: 16px; color: #222; }
 
@@ -12,10 +11,9 @@ p{ font-size: 16px; color: #222; }
 .menu ul{ margin: 0 auto; padding: 0; }
 .menu ul li{ display: inline-block; margin: 0 15px; }
 .menu ul li.active{ border-bottom: 2px solid #D2477C; }
-.menu ul li a{ font-size: 24px; color: #4195C5; font-weight: 500; }
+.menu ul li a{ font-size: 1rem; color: #222; text-transform: uppercase; font-weight: 500; }
 .hambunger{ display: none; }
 footer{ background: #4195C5; }
-.endereco{ background: url("/site/cegea-footer.png") no-repeat top left; padding-left: 92px; }
 .bg-primary{ background: #639963; }
 .bg-secundary{ background: #4195C5; }
 .top-int{ background:#759F39;}
@@ -30,34 +28,6 @@ button[data-controls="next"]{ float: right; }
 button[data-controls="prev"]{ float: left; }
 button[data-action="start"], button[data-action="stop"]{ display: none;}
 
-.text-primary{ color: #759F39; }
-.whatsfloat{ position: fixed; bottom: 20px; right: 20px; z-index: 99999; }
-
-@media (max-width: 1140px){
-    .redes img{ width: 35px; height: 35px; }
-    .menu ul li a{ font-size: 20px; }
-}
-
-@media (max-width: 820px){
-    .menu ul li a{ font-size: 22px; }
-    .socialtop{ display: none; }
-    .menutop.md\:col-span-5 {
-        grid-column: span 6 / span 6;
-    }
-}
 
 @media (max-width: 767px){
-    .endereco{ padding-left: 0; padding-top: 70px;}
-    #suptop{ text-align: center; padding: 10px 10px 5px; }
-    #suptop a{ display: inline-block; margin: 0 5px;}
-    #suptop img{ height: 30px; width: auto; }
-    .logo{ width: auto; height: 75px; }
-    .tns-outer{z-index: 999998;}
-    .menu{ border-top: 4px solid #4195C5; position: absolute; width: 100%; left: 0; top:150px; z-index: 999999; }
-    .menu ul{ margin: 0 auto; background: #E8E8E8; padding: 10px 0; }
-    .menu ul li{ width: auto; display: block; padding: 5px 0; text-align: left; }
-    .menu ul li a{ font-size: 18px;}
-    .hambunger{ display: block; float: right; }
-    .menutop.md\:col-span-5 { grid-column: span 1 / span 1;}
-    .whatsfloat{ position: fixed; z-index: 99999; bottom: 10px; right: 10px; width: 40px; height: 40px; }
 }

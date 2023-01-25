@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap">
         @stack('stylesheets')
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/site.css?v=2') }}">
+        <link rel="stylesheet" href="{{ asset('css/site.css?v=3') }}">
         @livewireStyles
         <!-- Scripts -->
         <script src="{{ asset('js/app.js?v=2') }}" defer></script>

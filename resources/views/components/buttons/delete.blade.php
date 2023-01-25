@@ -1,5 +1,4 @@
 @props(['action'])
-
 <div x-data="{ initial: true, deleting: false }" class="text-sm flex items-center">
     <button
         x-on:click.prevent="deleting = true; initial = false"

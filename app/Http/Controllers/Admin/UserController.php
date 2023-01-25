@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Role;
 use App\Models\User;
 use App\Http\Requests\UserRequest;
 use App\Http\Controllers\Controller;
@@ -12,7 +11,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $users = User::where('role_id',1)->paginate(15);
+        $users = User::paginate(15);
         return view('admin.user.index', compact('users'));
     }
 
@@ -25,7 +24,6 @@ class UserController extends Controller
     {
         $data = $request->all();
         $data['password'] = Hash::make($data['password']);
-        $data['role_id'] = 1;
         $user = User::create($data);
         return redirect()->route('admin.users.index')
             ->banner('Usuário cadastrado com sucesso!');
