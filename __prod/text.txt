@@ -1,15 +1,23 @@
 
-agdomenica.com.br
-agdomenica1
-a13YvD@Bf
-
-
-
+Locaweb
 https://centraldocliente.locaweb.com.br/
 agdomenica
 RQQM3u7h
 
 
+FTP
+agdomenica.com.br
+agdomenica1
+a13YvD@Bf
+
+
+MYSQL
+domenicacms.mysql.dbaas.com.br
+domenicacms
+domenicacms
+lP9y3M@TX4#
+
 SSH
 186.202.153.3
-agdomenica1@agdomenica.com.br
+ssh agdomenica1@agdomenica.com.br
+a13YvD@Bf
