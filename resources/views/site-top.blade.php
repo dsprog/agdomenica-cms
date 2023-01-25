@@ -7,11 +7,11 @@
             </div>
             <div class="col-span-1 md:col-span-5 menutop">
                 <nav x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
-                    <button class="hambunger" type="button"
+                    <button class="hambunger bg-black rounded" type="button"
                         @click="isOpen = !isOpen"
                         :class="{ 'transition transform-180': isOpen }"
                     >
-                        <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#4195C5">
+                        <svg class="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#FFF">
                             <path
                                 x-show="isOpen"
                                 fill-rule="evenodd"
@@ -40,11 +40,11 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-span-1 hidden xl:block socialtop">
+            <div class="col-span-1 hidden md:block socialtop">
                 <div class="redes">
-                    <a href="{{ config('configs.facebook') }}" target="_blank"><img src="{{ asset("site/facebook.png")}}" alt="Facebook" width="40" height="40"></a>
-                    <a href="{{ config('configs.instagram') }}" target="_blank"><img src="{{ asset("site/instagram.png")}}" alt="Instagram" width="40" height="40"></a>
-                    <a href="{{ config('configs.linkedin') }}" target="_blank"><img src="{{ asset("site/linkdin.png")}}" alt="Linkdin" width="40" height="40"></a>
+                    <a href="{{ config('configs.whatsapp') }}" target="_blank"><img src="{{ asset("site/whatsapp.png")}}" alt="Facebook" width="30" height="30"></a>
+                    <a href="{{ config('configs.instagram') }}" target="_blank"><img src="{{ asset("site/instagram.png")}}" alt="Instagram" width="30" height="30"></a>
+                    <a href="{{ config('configs.linkedin') }}" target="_blank"><img src="{{ asset("site/linkedin.png")}}" alt="Linkdin" width="30" height="30"></a>
                 </div>
             </div>
         </div>

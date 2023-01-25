@@ -4,7 +4,6 @@
 body{ padding: 0; margin: 0; background: #fff; }
 p{ font-size: 16px; color: #222; }
 
-#suptop{ background: #003333; padding: 10px; text-align: right; }
 .siganos{ font-size: 16px; color: #4195C5; font-weight: 500; }
 .redes a{ margin: 0 2px; display: inline-block; }
 .menu{ text-align: center; }
@@ -13,7 +12,7 @@ p{ font-size: 16px; color: #222; }
 .menu ul li.active{ border-bottom: 2px solid #D2477C; }
 .menu ul li a{ font-size: 1rem; color: #222; text-transform: uppercase; font-weight: 500; }
 .hambunger{ display: none; }
-footer{ background: #4195C5; }
+footer{ background: #222; }
 .bg-primary{ background: #639963; }
 .bg-secundary{ background: #4195C5; }
 .top-int{ background:#759F39;}
@@ -28,6 +27,20 @@ button[data-controls="next"]{ float: right; }
 button[data-controls="prev"]{ float: left; }
 button[data-action="start"], button[data-action="stop"]{ display: none;}
 
+@media (max-width: 1140px){
+    .menu ul li a{ font-size: .8rem; }
+}
 
 @media (max-width: 767px){
+    #suptop{ text-align: center; padding: 10px 10px 5px; }
+    #suptop a{ display: inline-block; margin: 0 5px;}
+    #suptop img{ height: 30px; width: auto; }
+    .tns-outer{z-index: 999998;}
+    .menu{ border-top: 4px solid #fff; position: absolute; width: 100%; left: 0; top:50px; z-index: 999999; }
+    .menu ul{ margin: 0 auto; background: #E8E8E8; padding: 10px 0; }
+    .menu ul li{ width: auto; display: block; padding: 5px 0; text-align: left; }
+    .menu ul li a{ font-size: 18px;}
+    .hambunger{ display: block; float: right; padding: 2px; }
+    .hambunger svg.fill-current{ fill: #FFF; }
+    .menutop.md\:col-span-5 { grid-column: span 1 / span 1;}
 }
