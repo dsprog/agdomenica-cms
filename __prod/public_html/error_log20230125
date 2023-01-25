@@ -1,0 +1,21 @@
+[Wed Jan 25 00:55:39 2023] [error] [client 73.62.50.232] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/300
+[Wed Jan 25 02:13:14 2023] [error] [client 34.219.221.177] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico
+[Wed Jan 25 02:13:21 2023] [error] [client 34.220.101.53] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico, referer: http://agdomenica.com.br/favicon.ico
+[Wed Jan 25 08:08:35 2023] [error] [client 185.231.115.174] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/wp-login.php, referer: http://agdomenica.com.br/wp-login.php
+[Wed Jan 25 08:20:38 2023] [error] [client 186.250.144.69] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico, referer: https://agdomenica.com.br/asr/fotos/
+[Wed Jan 25 08:36:01 2023] [error] [client 186.250.144.69] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico, referer: https://agdomenica.com.br/asr/fotos/
+[Wed Jan 25 09:27:30 2023] [error] [client 177.76.246.251] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico, referer: https://www.agdomenica.com.br/manetoni/cartaodigital/catalogo-manetoni.pdf
+[Wed Jan 25 11:01:04 2023] [error] [client 106.0.54.93] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/robots.txt
+[Wed Jan 25 11:04:10 2023] [error] [client 162.253.68.195] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/adminer.php, referer: http://agdomenica.com.br/adminer.php
+[Wed Jan 25 11:17:24 2023] [error] [client 186.249.149.230] File does not exist: /home/storage/f/b0/12/agdomenica1/public_html/favicon.ico, referer: https://agdomenica.com.br/__info.php
+[Wed Jan 25 11:27:52 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:11 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:13 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:14 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:14 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:14 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:14 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:14 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:29:15 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:30:35 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3
+[Wed Jan 25 11:30:37 2023] [error] [client 186.249.149.230] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in /home/storage/f/b0/12/agdomenica1/public_html/index.php on line 3

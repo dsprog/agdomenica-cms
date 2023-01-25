@@ -1,0 +1,2 @@
+AddHandler php80-script .php
+suPHP_ConfigPath /home/agdomenica1/

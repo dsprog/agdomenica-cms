@@ -8,6 +8,7 @@ use App\Models\Contact;
 use App\Mail\ContactSend;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
 
@@ -21,11 +22,15 @@ class SiteController extends Controller
 
     public function index()
     {
-        $banners = Banner::where('published_at','<=',date('Y-m-d'))
-             ->whereRaw('(expiration_date is NULL OR expiration_date >= CURDATE())')
-             ->where('active', 1)->get();
-        $about = About::first();
-        return view('site.home', compact('banners', 'about'));
+        if (Auth::check()) {
+            $banners = Banner::where('published_at', '<=', date('Y-m-d'))
+                ->whereRaw('(expiration_date is NULL OR expiration_date >= CURDATE())')
+                ->where('active', 1)->get();
+            $about = About::first();
+            return view('site.home', compact('banners', 'about'));
+        }else{
+            return view('site.embreve');
+        }
     }
 
     public function sobre()

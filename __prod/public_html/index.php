@@ -16,7 +16,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-if (file_exists($maintenance = __DIR__.'/../../laravel_app/storage/framework/maintenance.php')) {
+if (file_exists($maintenance = __DIR__.'/../backoffice/storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
@@ -31,7 +31,7 @@ if (file_exists($maintenance = __DIR__.'/../../laravel_app/storage/framework/mai
 |
 */
 
-require __DIR__.'/../../laravel_app/vendor/autoload.php';
+require __DIR__.'/../backoffice/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ require __DIR__.'/../../laravel_app/vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../../laravel_app/bootstrap/app.php';
+$app = require_once __DIR__.'/../backoffice/bootstrap/app.php';
 
 echo env('APP_URL');
 
