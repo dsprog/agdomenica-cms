@@ -21,3 +21,6 @@ SSH
 186.202.153.3
 ssh agdomenica1@agdomenica.com.br
 a13YvD@Bf
+
+
+ln -s /home/storage/f/b0/12/agdomenica1/backoffice/storage/app/ /home/storage/f/b0/12/agdomenica1/public_html
