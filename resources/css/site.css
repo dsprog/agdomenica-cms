@@ -27,6 +27,8 @@ button[data-controls="next"]{ float: right; }
 button[data-controls="prev"]{ float: left; }
 button[data-action="start"], button[data-action="stop"]{ display: none;}
 
+.rodape{ background: #231F20;}
+.whatsfloat{ position: fixed; bottom: 20px; right: 20px; z-index: 99999; }
 @media (max-width: 1140px){
     .menu ul li a{ font-size: .8rem; }
 }
@@ -43,4 +45,5 @@ button[data-action="start"], button[data-action="stop"]{ display: none;}
     .hambunger{ display: block; float: right; padding: 2px; }
     .hambunger svg.fill-current{ fill: #FFF; }
     .menutop.md\:col-span-5 { grid-column: span 1 / span 1;}
+    .whatsfloat{ position: fixed; z-index: 99999; bottom: 10px; right: 10px; width: 40px; height: 40px; }
 }
