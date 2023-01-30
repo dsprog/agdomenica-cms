@@ -15,6 +15,8 @@ Route::get('/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
 Route::get('/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::post('/contato', [SiteController::class, 'send'])->name('site.enviar');
 
+Route::get('/teste', [SiteController::class, 'teste'])->name('site.teste');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

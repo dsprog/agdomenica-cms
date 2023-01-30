@@ -81,4 +81,10 @@ class SiteController extends Controller
         return redirect()->back()->banner('Mensagem enviada com sucesso!');
     }
 
+    public function teste()
+    {
+        return view('site.teste');
+    }
+
+
 }
