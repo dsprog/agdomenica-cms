@@ -11,11 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 mix.setPublicPath('public_html/')
-.js('resources/js/app.js', 'js')
-.postCss('resources/css/site.css', 'css', [
-    require('postcss-import'),
-    require('tailwindcss'),
-]);
+    .js('resources/js/app.js', 'js')
+    .postCss('resources/css/site.css', 'css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+    ]);
 
 mix.browserSync('http://localhost:8000');
 
