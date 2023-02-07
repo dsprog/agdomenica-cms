@@ -25,11 +25,11 @@ class ClientRequest extends FormRequest
     {
         $rules = [
             'title' => 'required',
-            'image' => 'required|image|dimensions:width=300,height=300'
+            'image' => 'required|image|dimensions:width=259,height=200'
         ];
         if ($this->method() == 'PUT') {
             return [
-                'image' => 'nullable|image|dimensions:width=300,height=300'
+                'image' => 'nullable|image|dimensions:width=259,height=200'
             ];
         }
 

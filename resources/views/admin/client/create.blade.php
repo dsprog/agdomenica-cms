@@ -18,7 +18,7 @@
                                 <x-jet-input-error for="title" />
                             </div>
                             <div class="mb-5">
-                                <label class="block">Imagem (medida 300x300)</label>
+                                <label class="block">Imagem (medida 259x200)</label>
                                 <x-jet-input name="image" type="file" />
                                 <x-jet-input-error for="image" />
                             </div>
