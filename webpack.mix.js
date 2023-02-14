@@ -12,12 +12,12 @@ const mix = require('laravel-mix');
  */
 mix.setPublicPath('public_html/')
     .js('resources/js/app.js', 'js')
-    .postCss('resources/css/site.css', 'css', [
+    .postCss('resources/css/app.css', 'css', [
         require('postcss-import'),
         require('tailwindcss'),
     ]);
 
-mix.browserSync('http://localhost:8000');
+mix.browserSync('http://127.0.0.1:8000');
 
 if (mix.inProduction()) {
     mix.version();
