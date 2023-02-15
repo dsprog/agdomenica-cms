@@ -1,4 +1,4 @@
-<footer class="rodape py-2 md:py-10">
+<footer class="rodape py-2 md:py-10" id="contato">
     <div class="container mx-auto">
         <h4 class="text-white text-3xl text-center font-bold pb-5">CONTATO</h4>
         <div class="grid grid-cols-1 md:grid-cols-6 px-4 py-4">

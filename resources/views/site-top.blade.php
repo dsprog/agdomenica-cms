@@ -30,12 +30,13 @@
                     >
                         <ul>
                             <li><a href="{{ route('site.index') }}" @click="isOpen = false">Home</a></li>
-                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Quem Somos</a></li>
-                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Jobs</a></li>
-                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Social Media</a></li>
-                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Mkt Imobiliário</a></li>
-                            <li><a href="{{ route('site.index') }}" @click="isOpen = false">Serviços</a></li>
-                            <li><a href="{{ route('site.contato') }}" @click="isOpen = false">Contato</a></li>
+                            <li><a href="{{ route('site.index') }}#quem-somos" @click="isOpen = false">Quem Somos</a></li>
+                            <li><a href="{{ route('site.job') }}" @click="isOpen = false">Jobs</a></li>
+                            <li><a href="{{ route('site.sites') }}" @click="isOpen = false">Sites</a></li>
+                            <li><a href="{{ route('site.social_media') }}" @click="isOpen = false">Social Media</a></li>
+                            <li><a href="{{ route('site.mkt_imobiliário') }}" @click="isOpen = false">Mkt Imobiliário</a></li>
+                            <li><a href="{{ route('site.servicos') }}" @click="isOpen = false">Serviços</a></li>
+                            <li><a href="#contato" @click="isOpen = false">Contato</a></li>
                         </ul>
                     </div>
                 </nav>

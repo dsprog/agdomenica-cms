@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
 body{ padding: 0; margin: 0; background: #fff; }
 p{ font-size: 16px; color: #222; }
 
@@ -8,7 +9,7 @@ p{ font-size: 16px; color: #222; }
 .redes a{ margin: 0 2px; display: inline-block; }
 .menu{ text-align: center; }
 .menu ul{ margin: 0 auto; padding: 0; }
-.menu ul li{ display: inline-block; margin: 0 15px; }
+.menu ul li{ display: inline-block; margin: 0 12px; }
 .menu ul li.active{ border-bottom: 2px solid #D2477C; }
 .menu ul li a{ font-size: 1rem; color: #222; text-transform: uppercase; font-weight: 500; }
 .hambunger{ display: none; }

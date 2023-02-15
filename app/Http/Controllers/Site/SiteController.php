@@ -11,6 +11,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
+use App\Models\Client;
 
 class SiteController extends Controller
 {
@@ -26,8 +27,11 @@ class SiteController extends Controller
             $banners = Banner::where('published_at', '<=', date('Y-m-d'))
                 ->whereRaw('(expiration_date is NULL OR expiration_date >= CURDATE())')
                 ->where('active', 1)->get();
+
             $about = About::first();
-            return view('site.home', compact('banners', 'about'));
+            $clients = Client::all();
+
+            return view('site.home', compact('banners', 'about', 'clients'));
         }else{
             return view('site.embreve');
         }

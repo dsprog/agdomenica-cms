@@ -11,11 +11,20 @@ use App\Http\Controllers\Admin\ConfigController;
 use App\Http\Controllers\Admin\ContactController;
 
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
-Route::get('/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
-Route::get('/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::post('/contato', [SiteController::class, 'send'])->name('site.enviar');
 
-Route::get('/teste', [SiteController::class, 'teste'])->name('site.teste');
+
+
+Route::get('/job', [SiteController::class, 'teste'])->name('site.job');
+Route::get('/social-media', [SiteController::class, 'teste'])->name('site.social_media');
+Route::get('/sites', [SiteController::class, 'teste'])->name('site.sites');
+Route::get('/mkt-imobiliário', [SiteController::class, 'teste'])->name('site.mkt_imobiliário');
+
+Route::get('/servicos', [SiteController::class, 'teste'])->name('site.servicos');
+
+
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
